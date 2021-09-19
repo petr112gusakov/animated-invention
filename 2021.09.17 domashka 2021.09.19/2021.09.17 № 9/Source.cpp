@@ -9,8 +9,8 @@ int main()
 	cin >> a ;
 	b = a * a;
 	
-	s = b * b;
-	d = s / a;
-	cout << s+d+b+a+1 << endl;
+	
+	d = (b + a) * (b + 1) + 1;
+	cout << d << endl;
 	return 0;
 }

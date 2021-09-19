@@ -4,14 +4,8 @@ int main()
 {
 	int a = 0;
 	int b = 0;
-	int d = 0;
 
 	cin >> a >> b;
-	while (a - b >= 0) {
-		d = d + 1;
-		a = a - b;
-	}
-
-	cout << d << endl;
+	cout << (a > b) * a + (b > a) * b << endl;
 	return 0;
 }
