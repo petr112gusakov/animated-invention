@@ -9,9 +9,13 @@ int main(int argc, char* argv[])
     int k = 0;
     cin >> n >> m >> k;
     if (k <= m * n && (k % n == 0 || k % m == 0))
+    {
         cout << "YES";
+    }
     else
+    {
         cout << "NO";
+    }
   
     return EXIT_SUCCESS;
 }

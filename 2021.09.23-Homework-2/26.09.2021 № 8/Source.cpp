@@ -11,17 +11,20 @@ int main(int argc, char* argv[])
     int n = 0;
 
     cin >> a >> b >> c;
-    if (a > b) {
+    if (a > b) 
+    {
         m = b;
         b = a;
         a = m;
     }
-    if (b > c) {
+    if (b > c)
+    {
         n = c;
         c = b;
         b = n;
     }
-    if (a > b) {
+    if (a > b)
+    {
         m = b;
         b = a;
         a = m;
@@ -29,11 +32,17 @@ int main(int argc, char* argv[])
     if ((b + c) > a && (c + a) > b && (b + a) > c)
     {
         if (c * c == a * a + b * b)
+        {
             cout << "right";
+        }
         else if (c * c < a * a + b * b)
+        {
             cout << "acute";
+        }
         else
+        {
             cout << "obtuse";
+        }
     }
     else
         cout << "impossible";
