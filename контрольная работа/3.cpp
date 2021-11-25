@@ -1,27 +1,23 @@
-#include <iostream>
+#include<iostream>
+
 using namespace std;
+
 int main(int argc, char* argv[])
 {
-
-    
-        
-    int a, b, c, d, f;
-    cin >> a >> b;
-    d = a;
-    f = b;
-    if(a < b)
+    int n = 0;
+    int i = 0;
+    int j = 0;
+    int a = 0;
+    int b = 0;
+    cin >> n;
+    for (i = 1; i <= n; i++)
     {
-        a = a ^ b;
-        b = a ^ b;
-        a = a ^ b;
+        for (j = 1; j <= n; j++)
+        {
+            cin >> a;
+            b += a;
+        }
     }
-    while(b)
-    {
-        c = a;
-        a = b;
-        b = c % b;
-    }
-    b = (d * f)/a;
-    cout << b;
+    cout << b / 2;
     return EXIT_SUCCESS;
 }

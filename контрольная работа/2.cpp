@@ -1,31 +1,22 @@
-#include <iostream>
+#include<iostream>
+
 using namespace std;
+
 int main(int argc, char* argv[])
 {
+	int x1 = 0;
+	int y1 = 0;
+	int x2 = 0;
+	int y2 = 0;
+	cin >> x1 >> y1 >> x2 >> y2;
 
-    int x, max, min, i = 2;
-    cin >> min >> max;
-    while (cin >> x)
-    {
-        i++;
-        if (i % 2)
-        {
-            if (x < min)
-            {
-                min = x;
-
-            }
-            else if (x > max)
-            {
-                max = x;
-                cout << max + min;
-            }
-            
-        }
-        
-    }
-
-
-
-    return EXIT_SUCCESS;
+	if (x1 == y1 && x2 == y2 || x1 % 2 + y1 % 2 == x2 % 2 + y2 % 2 || x1 % 2 == y1 % 2 && x2 % 2 == y2 % 2 || x2 % 2 == y2 % 2 && x1 % 2 == y1 % 2)
+	{
+		cout << "YES";
+	}
+	else
+	{
+		cout << "NO";
+	}
+	return EXIT_SUCCESS;
 }
