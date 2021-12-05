@@ -2,7 +2,7 @@
 using namespace std;
 int main(int argc, char* argv[])
 
-	{
+{
 	int r = 2;
 	int n = 0;
 	cin >> n;
@@ -18,8 +18,5 @@ int main(int argc, char* argv[])
 		cout << r;
 	}
 
-
-
-
 	return EXIT_SUCCESS;
-	}
+}

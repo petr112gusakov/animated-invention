@@ -11,14 +11,13 @@ int main(int argc, char* argv[])
 	{
 		for (int j = 0; j < i; j++)
 		{
-			if (r > n) break;
+			if (r > n) {
+				break;
+			}
 			cout << r++ << " ";
 		}
 		cout << "\n";
 	}
-
-
-
 
 	return EXIT_SUCCESS;
 }

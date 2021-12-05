@@ -12,8 +12,5 @@ int main(int argc, char* argv[])
 		sum += x;
 	}
 	cout << sum;
-
-
-
 	return EXIT_SUCCESS;
 }
