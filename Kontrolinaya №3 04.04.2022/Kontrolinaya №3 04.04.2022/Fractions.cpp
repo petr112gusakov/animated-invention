@@ -205,6 +205,16 @@ Fractions operator/(const Fractions& fraction1, const Fractions& fraction2)
 	return Fractions(fraction1.numerator * fraction2.denominator, fraction1.denominator * fraction2.numerator);
 }
 
+Fractions operator/(const long long mult, const Fractions& fraction2)
+{
+	return Fractions(fraction2.denominator*mult,fraction2.numerator);
+}
+
+Fractions operator/(const Fractions& fraction1, const long long mult)
+{
+	return Fractions(fraction1.numerator,fraction1.denominator*mult);
+}
+
 Fractions operator ^(const Fractions& fraction1, const long long mult)
 {
 	return Fractions(pow(fraction1.numerator, (mult)), pow(fraction1.denominator, (mult)));

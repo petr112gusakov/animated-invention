@@ -29,6 +29,8 @@ public:
 	friend Fractions operator* (const Fractions& fraction1, const long long  mult);
 	friend Fractions operator* (const long long mult, const Fractions& fraction2);
 	friend Fractions operator/ (const Fractions& fraction1, const Fractions& fraction2);
+	friend Fractions operator/ (const long long mult, const Fractions& fraction2);
+	friend Fractions operator/ (const Fractions& fraction1, const long long mult );
 	Fractions operator*=(const Fractions& fraction);
 	Fractions operator/=(const Fractions& fraction);
 	Fractions operator-=(const Fractions& fraction);
